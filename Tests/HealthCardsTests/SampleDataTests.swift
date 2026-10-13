@@ -106,7 +106,9 @@ struct SampleDataTests {
         #expect(sample.heartRateSummary(on: date(2026, 10, 10)).isEmpty)
         let today = sample.heartRateSummary(on: now)
         #expect(today.samples.allSatisfy { $0.date <= now })
-        #expect(today.samples.count == 18 * 12 + 6 + 1)
+        // Every five minutes from midnight to 18:30, inclusive.
+        let expectedSamples: Int = 18 * 12 + 6 + 1
+        #expect(today.samples.count == expectedSamples)
         let workouts = try await sample.workouts(in: DateInterval(start: date(2026, 10, 9), end: date(2026, 10, 11)))
         #expect(workouts.allSatisfy { $0.end <= now })
     }
