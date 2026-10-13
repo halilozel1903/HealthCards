@@ -40,7 +40,7 @@ Captured by CI from the example app, *Vitals*, on an iPhone and an Apple Watch s
 
 | Watch: summary | Watch: heart rate |
 | :---: | :---: |
-| <img src="docs/screenshots/watch-summary.png" alt="Apple Watch: compact activity rings with move, exercise and stand values, and today's steps" width="200"> | <img src="docs/screenshots/watch-heart.png" alt="Apple Watch: the latest heart rate, small range bars for the day, and the resting heart rate and HRV" width="200"> |
+| <img src="docs/screenshots/watch-summary.png" alt="Apple Watch: the Summary screen with the Sample data label and compact activity rings with move, exercise and stand values" width="200"> | <img src="docs/screenshots/watch-heart.png" alt="Apple Watch: the latest heart rate, small range bars for the day, and the resting heart rate and HRV" width="200"> |
 
 > **These screenshots show the built-in sample data mode, not real health data.** Simulators have no HealthKit data, so the screenshot scenes use `SampleHealthDataSource` with a fixed date (Friday 9 October 2026, 18:30). The app shows a small **Sample data** label whenever it displays sample data. On a device with Health data, the same cards show your own numbers.
 
